@@ -1,0 +1,23 @@
+.filter_cover {
+  min-height: 6rem;
+  align-items: center;
+  background-color: #eeeeee !important;
+}
+
+.search_form {
+  .ant-form-item {
+    margin: 0 1rem;
+    div {
+      label {
+        font-size: 15px !important;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 600;
+      }
+    }
+    .ant-form-item-control {
+      div {
+        // background-color: red !important;
+      }
+    }
+  }
+}

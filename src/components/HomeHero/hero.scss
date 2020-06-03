@@ -1,0 +1,38 @@
+.hero_row {
+  height: 33rem;
+  background: rgb(224, 224, 224);
+  .left_col {
+    img {
+      width: 50rem;
+      height: 33rem;
+    }
+  }
+}
+.right_col_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  h1 {
+    font-size: 75px;
+    font-family: "Fredoka One", cursive;
+  }
+  span {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+  }
+  div {
+    padding: 15px 0px;
+    padding-right: 4rem;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+.btns {
+  button {
+    span {
+      font-size: 15px;
+    }
+  }
+}
