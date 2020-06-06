@@ -1,0 +1,39 @@
+.footer_covers {
+  background-color: #4b4b4b;
+  padding: 4rem;
+  .footer_col {
+    padding: 20px;
+    h2 {
+      color: white;
+      font-weight: 500;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p {
+      color: rgb(214, 214, 214);
+    }
+  }
+}
+
+.icons {
+  display: flex !important;
+  .icon {
+    color: white;
+    margin-top: 20px;
+    margin-right: 15px;
+    span {
+      font-size: 26px;
+    }
+  }
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  a {
+    color: white;
+    font-size: 15px;
+    &:hover {
+      color: gray;
+    }
+  }
+}

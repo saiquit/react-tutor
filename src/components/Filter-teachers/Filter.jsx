@@ -56,7 +56,7 @@ function Filter() {
               <Select.Option value="chemistry">Chemistry</Select.Option>
             </Select>
           </Form.Item>
-          <Button type="submit">Sumbit</Button>
+          <Button type="submit">Search</Button>
         </Form>
       </Col>
     </Row>
