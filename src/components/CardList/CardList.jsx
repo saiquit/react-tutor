@@ -1,23 +1,37 @@
 import React from "react";
 import Card from "../Card/Card";
 import "./card-list.scss";
-import { tData } from "./tData";
+import { connect } from "react-redux";
 
-function CardList() {
+function CardList({ tutors, teachers, filteredTeachers, noData }) {
   return (
     <>
-      <h1 style={{ textAlign: "center", padding: "20px" }}>
-        Our Premium Teachers
-      </h1>
+      {!tutors && (
+        <h1 style={{ textAlign: "center", padding: "20px" }}>
+          Our Premium Teachers
+        </h1>
+      )}
+      {noData && <h1>No more Data</h1>}
+
       <div className="card_cover">
-        {tData
-          .map((data) => {
-            return <Card key={data.id} data={data} />;
+        {teachers
+          .filter((data) => {
+            return data.premium;
           })
-          .slice(0, 15)}
+          .map((filtered) => {
+            return <Card key={filtered.id} data={filtered} />;
+          })
+          .slice(0, 10)}
       </div>
     </>
   );
 }
+const mapStateToProps = ({
+  teachers: { teachers, filteredTeachers, noData },
+}) => ({
+  teachers,
+  filteredTeachers,
+  noData,
+});
 
-export default CardList;
+export default connect(mapStateToProps)(CardList);

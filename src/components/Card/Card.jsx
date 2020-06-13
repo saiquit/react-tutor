@@ -11,23 +11,20 @@ const Cards = ({ data }) => {
     email,
     gender,
     img,
-    institution,
+    university,
     phone,
     subjects,
     id,
+    area,
   } = data;
   return (
     <Card
       hoverable
       style={{ width: 240 }}
-      cover={
-        <img
-          alt="example"
-          src={`https://randomuser.me/api/portraits/${gender}/${id}.jpg`}
-        />
-      }
+      cover={<img alt="example" src={img} />}
     >
       <Meta title={`${first_name} ${last_name}`} description={phone} />
+      <span>{area}</span>
     </Card>
   );
 };

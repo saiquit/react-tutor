@@ -27,8 +27,8 @@ const Footer = () => {
       <Col className="footer_col" span={8}>
         <h2>Work with Us</h2>
         <div className="footer_links">
-          <Link>Become A Tutor</Link>
-          <Link>Log in as A Tutor</Link>
+          <Link to="/">Become A Tutor</Link>
+          <Link to="/">Log in as A Tutor</Link>
         </div>
       </Col>
       <Col className="footer_col" span={8}>

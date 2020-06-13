@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./drawer.scss";
 import { Drawer } from "antd";
 
 const DrawerMenu = ({ visible, handleVisible }) => {
@@ -11,9 +11,12 @@ const DrawerMenu = ({ visible, handleVisible }) => {
       placement="left"
       visible={visible}
       onClose={handleVisible}
+      destroyOnClose={true}
     >
       <div className="links">
-        <Link to="/tutors">Tutors</Link>
+        <Link onClick={handleVisible} to="/tutors">
+          Tutors
+        </Link>
       </div>
     </Drawer>
   );

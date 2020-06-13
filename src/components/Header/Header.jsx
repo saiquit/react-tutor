@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Col, Row } from "antd";
 import DrawerMenu from "../Drawer/Drawer";
 import { AlignLeftOutlined } from "@ant-design/icons";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 import "./header.scss";
 
@@ -22,7 +22,9 @@ function Header() {
         <DrawerMenu visible={visible} handleVisible={handleVisible} />
       </Col>
       <Col className="brand_col" span={8}>
-        <Link to="/" ><h2>Tution</h2></Link>
+        <h2>
+          <Link to="/">Tution</Link>
+        </h2>
       </Col>
       <Col span={8}></Col>
     </Row>
